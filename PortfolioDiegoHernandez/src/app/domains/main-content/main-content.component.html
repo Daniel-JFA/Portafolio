@@ -1,12 +1,12 @@
 <div>
-    @if("currentSection === 'proyectos'"){<ng-container >
+    @if(currentSection==='proyectos'){
       <app-proyectos></app-proyectos>
-    </ng-container>}
-    @if("currentSection === 'habilidades'"){ <ng-container >
+    }
+    @if(currentSection === 'habilidades'){ 
                 <app-habilidades></app-habilidades>
-                </ng-container>
+                
             }
-    @if("currentSection === 'contacto'"){<ng-container >
+    @if(currentSection  === 'contacto'){
         <app-contacto></app-contacto>
-        </ng-container>}
+        }
   </div>
