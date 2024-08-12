@@ -1,1 +1,12 @@
-<p>main-content works!</p>
+<div>
+    @if("currentSection === 'proyectos'"){<ng-container >
+      <app-proyectos></app-proyectos>
+    </ng-container>}
+    @if("currentSection === 'habilidades'"){ <ng-container >
+                <app-habilidades></app-habilidades>
+                </ng-container>
+            }
+    @if("currentSection === 'contacto'"){<ng-container >
+        <app-contacto></app-contacto>
+        </ng-container>}
+  </div>
