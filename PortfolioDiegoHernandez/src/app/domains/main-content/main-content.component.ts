@@ -11,6 +11,6 @@ import { ContactoComponent } from '../contacto/contacto.component';
   styleUrl: './main-content.component.css'
 })
 export class MainContentComponent {
-  currentSection2='habilidades';
-  @Input() currentSection: string = 'proyectos';
+  
+  @Input() currentSection: string = '';
 }

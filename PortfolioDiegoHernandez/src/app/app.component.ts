@@ -13,7 +13,7 @@ import { MainContentComponent } from './domains/main-content/main-content.compon
 })
 export class AppComponent {
   title = 'PortfolioAngular';
-  selectedSection: string = 'proyectos';
+  selectedSection: string = '';
 
   onSectionChange(section: string): void {
     this.selectedSection = section;
