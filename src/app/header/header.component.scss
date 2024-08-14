@@ -1,0 +1,58 @@
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  font-size: 28p;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.photo-container {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: 1.5rem;
+  background: white;
+}
+
+.name {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: lightpink;
+}
