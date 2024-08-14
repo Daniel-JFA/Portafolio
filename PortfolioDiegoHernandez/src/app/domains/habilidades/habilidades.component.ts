@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component,inject } from '@angular/core';
+import { HabilidadesService } from '../../services/habilidades.service';
 @Component({
   selector: 'app-habilidades',
   standalone: true,
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './habilidades.component.css'
 })
 export class HabilidadesComponent {
-
+  habilidadService=inject(HabilidadesService);
+  habilidades:any=this.habilidadService.getHabilidades();
 }

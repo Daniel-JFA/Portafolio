@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component,inject } from '@angular/core';
 
+import { ProyectoService } from '../../services/proyecto.service';
 @Component({
   selector: 'app-proyectos',
   standalone: true,
@@ -8,15 +8,9 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './proyectos.component.html',
   styleUrl: './proyectos.component.css'
 })
-export class ProyectosComponent implements OnInit{
-  proyectos: any[] = [];
-
-  constructor(private http: HttpClient) {}
-
-  ngOnInit(): void {
-    this.http.get('http://localhost:3000/proyectos').subscribe(data => {
-      this.proyectos = data as any[];
-    });
-  }
-
+export class ProyectosComponent {
+  
+ proyectService=inject(ProyectoService);
+ proyectos:any=this.proyectService.getProyectos();
+   
 }
