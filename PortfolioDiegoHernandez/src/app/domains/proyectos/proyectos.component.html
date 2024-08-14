@@ -1,1 +1,20 @@
-<p>proyectos works!</p>
+@if(proyectos.length > 0){
+<div >
+    <h2>Proyectos</h2>
+    <ul>
+      @for( proyecto of proyectos;track proyecto.id){<li>
+        <h3>{{ proyecto.nombre }}</h3>
+        <p>{{ proyecto.descripcion }}</p>
+        <a [href]="proyecto.url" target="_blank">Ver Proyecto</a>
+      </li>
+    }
+    </ul>
+  </div>
+}
+  @if(proyectos.length === 0){
+    <div >
+        <p>No se encontraron proyectos.</p>
+      </div>
+  }
+  
+  
