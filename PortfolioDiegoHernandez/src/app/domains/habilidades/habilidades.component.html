@@ -1,0 +1,32 @@
+ <!-- Main content -->
+<main class="container my-5">
+    @if(habilidades.length > 0){
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="mb-4">Habilidades</h2>
+        </div>
+      </div>
+      <div class="row">
+        @for(habilidad of habilidades; track habilidad.id){
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title">{{ habilidad.habilidad }}</h3>
+                <p class="card-text">Nivel: <span class="badge bg-info">{{ habilidad.nivel }}</span></p>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    }
+    @if(habilidades.length === 0){
+      <div class="row">
+        <div class="col text-center">
+          <div class="alert alert-warning" role="alert">
+            <p>No se encontraron habilidades.</p>
+          </div>
+        </div>
+      </div>
+    } 
+  </main>
+  
