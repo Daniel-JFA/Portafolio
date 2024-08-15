@@ -1,0 +1,11 @@
+{
+    "proyectos": [
+      { "id": 1, "nombre": "Proyecto stramipyme", "descripcion": "Es un proyecto de la universidad Eafit, con el propósito fundamental de fortalecer el tejido empresarial colombiano. Dando una visión completa y empática a las empresas, haciendo un llamado a la acción para apoyar en los factores clave de la economía.", "url": "https://estramipyimes.web.app/", "img": "images/png/stramipyme.png" }
+    ],
+    "habilidades": [
+      { "id": 3, "habilidad": "HTML5", "nivel": "65%", "color": "blue" },
+      { "id": 4, "habilidad": "CSS", "nivel": "65%", "color": "blue" },
+      { "id": 1, "habilidad": "Angular", "nivel": "30%", "color": "yellow" },
+      { "id": 2, "habilidad": "JavaScript", "nivel": "30%", "color": "yellow" }
+    ]
+  }

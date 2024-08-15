@@ -1,0 +1,63 @@
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(70px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.photo-container {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: 1.5rem;
+  background: white;
+}
+
+.name {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.name:hover {
+  color: darkgoldenrod;
+}
+
+img {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: darkgoldenrod;
+}

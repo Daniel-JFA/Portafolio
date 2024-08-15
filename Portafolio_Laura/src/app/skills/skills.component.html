@@ -1,0 +1,17 @@
+<section id="skills">
+    <p class="title">Mis habilidades</p>
+    <div class="skills-wrapper">
+        <div *ngFor="let skill of skills" class="col-md-6">
+          <span class="skill">{{skill?.habilidad}}</span>
+          <div [class]="'progress ' + skill?.color">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">{{skill?.nivel}}</div>
+          </div>
+        </div>
+    </div>
+  </section>

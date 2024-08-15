@@ -1,0 +1,25 @@
+#contact {
+  padding: 50px 100px;
+  text-align: center;
+}
+input, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.image {
+  vertical-align: top;
+  width: 25rem;
+  height: 25rem;
+}
+.form {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 50px;
+}
+.send {
+  width: 100%;
+  border-radius: 20px;
+}

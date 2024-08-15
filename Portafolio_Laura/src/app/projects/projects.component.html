@@ -1,0 +1,22 @@
+<section id="projects" class="bg-gray">
+  <span class="title">Mi proyecto</span>
+  <br>
+  <br>
+  <p class="text">En esta sección encontrarás algunos de los proyectos que he realizado.</p>
+  <div *ngFor="let project of projects" class="row d-flex align-items-center">
+    <div class="col">
+      <img class="image" [src]="project?.img" alt="stramipyme">
+    </div>
+    <div class="col">
+      <span class="text fw-bolder">{{project?.nombre}}</span>
+      <br>
+      <br>
+      <span class="text">
+        {{project?.descripcion}}
+      </span>
+      <br>
+      <br>
+      <a [href]="project?.url" target="_blank" class="btn btn-primary more">Ver proyecto >></a>
+    </div>
+  </div>
+</section>
